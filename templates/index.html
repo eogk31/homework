@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>창작적 글쓰기 도우미</title>
+</head>
+<body>
+    <div class="container">
+        <h1>창작적 글쓰기 도우미</h1>
+        <div class="chat-container" id="chat-container">
+            <!-- 대화 내용이 표시될 영역 -->
+        </div>
+        
+        <div class="input-section">
+            <textarea id="user-input" placeholder="메시지 입력..."></textarea>
+            <button onclick="generateContent()">전송</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

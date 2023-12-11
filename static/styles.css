@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #36393f; /* Discord background color */
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #2f3136; /* Discord chat container background color */
+    text-align: center;
+}
+
+.chat-container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #4f545c; /* Discord chat container border color */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.user-message, .assistant-message {
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #7289da; /* Discord user message color */
+    color: #fff;
+    text-align: right;
+    float: right;
+}
+
+.assistant-message {
+    background-color: #4f545c; /* Discord assistant message color */
+    color: #fff;
+    text-align: left;
+    float: left;
+}
+
+textarea {
+    height: 60px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #4f545c; /* Discord input border color */
+    border-radius: 8px;
+    background-color: #40444b; /* Discord input background color */
+    resize: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    width: 80px;
+    background-color: #7289da; /* Discord send button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+button:hover {
+    background-color: #677bc4; /* Discord send button hover color */
+}
